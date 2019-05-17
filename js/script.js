@@ -3,7 +3,7 @@
 
 function findMax(aNums){
     var iMax = aNums[0];
-    for(var iCount=0; iCount < aNums.length; iCount++) {
+    for(var iCount=0; iCount < aNums; iCount++) {
         if(iMax > aNums[iCount]) {
             iMax = aNums[iCount];
         }
@@ -34,16 +34,20 @@ for(var iCount = 0; iCount < iSize; iCount++) {
 
     var iGradesBiology = parseInt(prompt('Student '+(iCount+1)+': Grade for Chemistry out of 100'));
     aGradesBiology.push(iGradesBiology);
+
 }
 
 // processing: calculate average grade for each student and find top grade in class
 var aAverageGrades = [];
 
-for(var iCount=0; iCount<iSize; iCount++) {
-    var fAverage = (aGradesPhysics[iCount] + aGradesChemistry[iCount] + aGradesBiology[iCount]) / [iCount];
+for(var iCount=0; iCount < iSize; iCount++) {
+    var fAverage = (aGradesPhysics[iCount] + aGradesChemistry[iCount] + aGradesBiology[iCount]) / 3;
     aAverageGrades.push(fAverage);
+    // console.log(fAverage);
 }
 var iTopGrade = findMax(aAverageGrades);
+// console.log(aAverageGrades);
+
 
 //output: list result for each student and top grade
 
