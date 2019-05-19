@@ -29,10 +29,10 @@ for(var iCount = 0; iCount < iSize; iCount++) {
     var iGradesPhysics = parseInt(prompt('Student '+(iCount+1)+': Grade for Physics out of 100'));
     aGradesPhysics.push(iGradesPhysics);
 
-    var iGradesChemistry = parseInt(prompt('Student '+(iCount+1)+': Grade for Biology out of 100'));
+    var iGradesChemistry = parseInt(prompt('Student '+(iCount+1)+': Grade for Chemistry out of 100'));
     aGradesChemistry.push(iGradesChemistry);
 
-    var iGradesBiology = parseInt(prompt('Student '+(iCount+1)+': Grade for Chemistry out of 100'));
+    var iGradesBiology = parseInt(prompt('Student '+(iCount+1)+': Grade for Biology out of 100'));
     aGradesBiology.push(iGradesBiology);
 
 }
